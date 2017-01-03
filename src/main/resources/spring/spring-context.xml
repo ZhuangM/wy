@@ -15,7 +15,7 @@
 	<!-- 开启spring的Annotation注解处理器 -->
 	<context:annotation-config />
 	<!-- 开启spring的Bean自动扫描机制来查找和管理Bean实例 -->
-	<context:component-scan base-package="com.wyglxt" />
+	<context:component-scan base-package="com.up.wyglxt" />
 
 	<!-- 读取properties文件 -->
 	<bean id="propertyConfigurer"
@@ -27,7 +27,7 @@
 		</property>
 	</bean>
 
-	<!-- 配置数据源bean，使用C3P0数据源实现 -->
+	<!-- 配置数据源bean，使用c3p0数据源实现 -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		destroy-method="close">
 		<property name="driverClass">

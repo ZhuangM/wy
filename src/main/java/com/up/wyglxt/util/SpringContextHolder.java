@@ -30,11 +30,6 @@ public class SpringContextHolder implements ApplicationContextAware, DisposableB
 	}
 
 	private static void checkApplicationContext() {
-		/*
-		 * if(applicationContext == null) { try { throw new
-		 * IllegalStateException("applicationContextδע��"); } catch
-		 * (IllegalStateException e) { e.printStackTrace(); } }
-		 */
 	}
 
 	public void destroy() throws Exception {
