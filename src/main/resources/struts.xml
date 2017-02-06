@@ -16,7 +16,9 @@
 			<result name="exception">/exception.html</result>
 		</global-results>
 
-		<action name="test" class="com.up.wyglxt.action.TestAction" />
+		<action name="test" class="com.up.wyglxt.action.TestAction" >
+			<result name="success">/index.html</result>
+		</action>
 
 		<!-- 登录 -->
 		<action name="login" class="com.up.wyglxt.action.LoginAction">

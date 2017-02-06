@@ -16,7 +16,13 @@ public class TestAction extends BaseAction {
 	private static final long serialVersionUID = -418376507444288183L;
 	private static final Logger log = Logger.getLogger(TestAction.class);
 
-	public void test() {
+	@Override
+	public String execute() {
+		System.out.println("coming...");
+		return SUCCESS;
+	}
+
+	public String test() {
 		log.info("start test...");
 		IHouseService houseService = (IHouseService) SpringContextHolder.getBean("houseService");
 		IOwnerService ownerService = (IOwnerService) SpringContextHolder.getBean("ownerService");
@@ -42,5 +48,6 @@ public class TestAction extends BaseAction {
 		ownerService.createRecord(owner);
 		houseService.createRecord(house);
 		log.info("end test");
+		return SUCCESS;
 	}
 }

@@ -14,7 +14,7 @@
 
 	<!-- 开启spring的Annotation注解处理器 -->
 	<context:annotation-config />
-	<!-- 开启spring的Bean自动扫描机制来查找和管理Bean实例 -->
+	<!-- 组件扫描 -->
 	<context:component-scan base-package="com.up.wyglxt" />
 
 	<!-- 读取properties文件 -->
